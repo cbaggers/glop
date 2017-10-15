@@ -211,8 +211,9 @@
   (display-ptr :pointer) (visual-infos :pointer) (share-list glx-context)
   (redirect :boolean))
 
-(defun glx-create-context (dpy visual)
-  (let ((ctx (%glx-create-context dpy visual (null-pointer) t)))
+(defun glx-create-context (dpy visual &optional context-to-share-with)
+  (let* ((context-to-share-with (or context-to-share-with (null-pointer)))
+         (ctx (%glx-create-context dpy visual context-to-share-with t)))
     (when (null-pointer-p ctx)
       (error "Unable to create context"))
     ctx))

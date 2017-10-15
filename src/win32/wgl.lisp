@@ -83,7 +83,8 @@
 
 (defcfun ("glGetError" get-error) :int)
 
-(defun wgl-create-specific-context (hdc context-attribs)
+(defun wgl-create-specific-context (hdc context-attribs
+                                    &optional context-to-share-with)
   (with-foreign-object ( atts :int (1+ (length context-attribs)))
     (loop
       for i below (length context-attribs)
@@ -98,7 +99,8 @@
     ;; see http://www.opengl.org/wiki/Creating_an_OpenGL_Context#Proper_Context_Creation
     (let ((tmp-ctx  (wgl-create-context hdc)))
       (wgl-make-current hdc tmp-ctx)
-      (let ((ptr (wgl-get-proc-address "wglCreateContextAttribsARB")))
+      (let ((ptr (wgl-get-proc-address "wglCreateContextAttribsARB"))
+            (context-to-share-with (or context-to-share-with 0)))
         ;; remove out temporary context
         (wgl-make-current (cffi:null-pointer) (cffi:null-pointer))
         (wgl-delete-context tmp-ctx)

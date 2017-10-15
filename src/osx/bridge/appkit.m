@@ -285,7 +285,7 @@ NSOpenGLPixelFormat *NSOpenGLPixelFormatInit
 /***                           NSOpenGLContext                              ***/
 /******************************************************************************/
 
-
+// Hey chris, start here
 NSOpenGLContext *NSOpenGLContextInit (NSOpenGLPixelFormat *format)
 {
   return [[NSOpenGLContext alloc] initWithFormat:format
