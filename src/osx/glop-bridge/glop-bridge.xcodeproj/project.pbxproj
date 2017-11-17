@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCCB22CF1FBF5AFA000FA596 /* glop_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = FCCB22CE1FBF5AFA000FA596 /* glop_bridge.h */; };
+		FCCB22D11FBF5AFA000FA596 /* glop_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB22D01FBF5AFA000FA596 /* glop_bridge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FCCB22DF1FBF7C72000FA596 /* GlopApp.h in Headers */ = {isa = PBXBuildFile; fileRef = FCCB22DE1FBF7C72000FA596 /* GlopApp.h */; };
+		FCCB22E11FBF7CAF000FA596 /* GlopApp.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB22E01FBF7CAF000FA596 /* GlopApp.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FCCB22E31FBF7DEF000FA596 /* GlopView.h in Headers */ = {isa = PBXBuildFile; fileRef = FCCB22E21FBF7DE4000FA596 /* GlopView.h */; };
+		FCCB22E51FBF7E0F000FA596 /* GlopView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB22E41FBF7E0F000FA596 /* GlopView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FCCB22E71FBF7E5C000FA596 /* AppKitExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB22E61FBF7E5C000FA596 /* AppKitExtern.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FCCB22E91FBF7E80000FA596 /* FoundationExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB22E81FBF7E80000FA596 /* FoundationExtern.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FCDBB38B1FBF85D800AB3923 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCB22DC1FBF7A6C000FA596 /* CoreServices.framework */; };
+		FCDBB38C1FBF85E200AB3923 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCB22DA1FBF7A65000FA596 /* Carbon.framework */; };
+		FCDBB38D1FBF85F800AB3923 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCB22D81FBF5B20000FA596 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FCCB22CB1FBF5AFA000FA596 /* libglop-bridge.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = "libglop-bridge.dylib"; path = "glop-bridge.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCB22CE1FBF5AFA000FA596 /* glop_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glop_bridge.h; sourceTree = "<group>"; };
+		FCCB22D01FBF5AFA000FA596 /* glop_bridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = glop_bridge.m; sourceTree = "<group>"; };
+		FCCB22D81FBF5B20000FA596 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FCCB22DA1FBF7A65000FA596 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		FCCB22DC1FBF7A6C000FA596 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		FCCB22DE1FBF7C72000FA596 /* GlopApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlopApp.h; sourceTree = "<group>"; };
+		FCCB22E01FBF7CAF000FA596 /* GlopApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlopApp.m; sourceTree = "<group>"; };
+		FCCB22E21FBF7DE4000FA596 /* GlopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlopView.h; sourceTree = "<group>"; };
+		FCCB22E41FBF7E0F000FA596 /* GlopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlopView.m; sourceTree = "<group>"; };
+		FCCB22E61FBF7E5C000FA596 /* AppKitExtern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppKitExtern.m; sourceTree = "<group>"; };
+		FCCB22E81FBF7E80000FA596 /* FoundationExtern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoundationExtern.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCCB22C81FBF5AFA000FA596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCDBB38D1FBF85F800AB3923 /* AppKit.framework in Frameworks */,
+				FCDBB38C1FBF85E200AB3923 /* Carbon.framework in Frameworks */,
+				FCDBB38B1FBF85D800AB3923 /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCCB22C21FBF5AFA000FA596 = {
+			isa = PBXGroup;
+			children = (
+				FCCB22CD1FBF5AFA000FA596 /* glop-bridge */,
+				FCCB22CC1FBF5AFA000FA596 /* Products */,
+				FCCB22D71FBF5B20000FA596 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCCB22CC1FBF5AFA000FA596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCCB22CB1FBF5AFA000FA596 /* libglop-bridge.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCCB22CD1FBF5AFA000FA596 /* glop-bridge */ = {
+			isa = PBXGroup;
+			children = (
+				FCCB22CE1FBF5AFA000FA596 /* glop_bridge.h */,
+				FCCB22D01FBF5AFA000FA596 /* glop_bridge.m */,
+				FCCB22DE1FBF7C72000FA596 /* GlopApp.h */,
+				FCCB22E01FBF7CAF000FA596 /* GlopApp.m */,
+				FCCB22E21FBF7DE4000FA596 /* GlopView.h */,
+				FCCB22E41FBF7E0F000FA596 /* GlopView.m */,
+				FCCB22E61FBF7E5C000FA596 /* AppKitExtern.m */,
+				FCCB22E81FBF7E80000FA596 /* FoundationExtern.m */,
+			);
+			path = "glop-bridge";
+			sourceTree = "<group>";
+		};
+		FCCB22D71FBF5B20000FA596 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCCB22DC1FBF7A6C000FA596 /* CoreServices.framework */,
+				FCCB22DA1FBF7A65000FA596 /* Carbon.framework */,
+				FCCB22D81FBF5B20000FA596 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FCCB22C91FBF5AFA000FA596 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCB22DF1FBF7C72000FA596 /* GlopApp.h in Headers */,
+				FCCB22CF1FBF5AFA000FA596 /* glop_bridge.h in Headers */,
+				FCCB22E31FBF7DEF000FA596 /* GlopView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FCCB22CA1FBF5AFA000FA596 /* glop-bridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCB22D41FBF5AFA000FA596 /* Build configuration list for PBXNativeTarget "glop-bridge" */;
+			buildPhases = (
+				FCCB22C71FBF5AFA000FA596 /* Sources */,
+				FCCB22C81FBF5AFA000FA596 /* Frameworks */,
+				FCCB22C91FBF5AFA000FA596 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "glop-bridge";
+			productName = "glop-bridge";
+			productReference = FCCB22CB1FBF5AFA000FA596 /* libglop-bridge.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCCB22C31FBF5AFA000FA596 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Baggers;
+				TargetAttributes = {
+					FCCB22CA1FBF5AFA000FA596 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FCCB22C61FBF5AFA000FA596 /* Build configuration list for PBXProject "glop-bridge" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FCCB22C21FBF5AFA000FA596;
+			productRefGroup = FCCB22CC1FBF5AFA000FA596 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCCB22CA1FBF5AFA000FA596 /* glop-bridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCCB22C71FBF5AFA000FA596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCB22E71FBF7E5C000FA596 /* AppKitExtern.m in Sources */,
+				FCCB22E51FBF7E0F000FA596 /* GlopView.m in Sources */,
+				FCCB22D11FBF5AFA000FA596 /* glop_bridge.m in Sources */,
+				FCCB22E11FBF7CAF000FA596 /* GlopApp.m in Sources */,
+				FCCB22E91FBF7E80000FA596 /* FoundationExtern.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FCCB22D21FBF5AFA000FA596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FCCB22D31FBF5AFA000FA596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FCCB22D51FBF5AFA000FA596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FCCB22D61FBF5AFA000FA596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCCB22C61FBF5AFA000FA596 /* Build configuration list for PBXProject "glop-bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCB22D21FBF5AFA000FA596 /* Debug */,
+				FCCB22D31FBF5AFA000FA596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCB22D41FBF5AFA000FA596 /* Build configuration list for PBXNativeTarget "glop-bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCB22D51FBF5AFA000FA596 /* Debug */,
+				FCCB22D61FBF5AFA000FA596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCCB22C31FBF5AFA000FA596 /* Project object */;
+}

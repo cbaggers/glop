@@ -159,7 +159,7 @@
   (:f10 109)
   (:f12 111)
   (:f15 113)
-  :insert 
+  :insert
   :home
   :page-up
   :delete
@@ -191,7 +191,7 @@
   (:function #x140000)
   (:device-independant #xffff0000))
 
-(defcfun ("NSEventModifierFlags" ns-event-modifier-flags) ns-modifier-flags
+(defcfun ("NSEventGetModifierFlags" ns-event-modifier-flags) ns-modifier-flags
   (event :pointer))
 
 (defcfun ("NSEventWindow" ns-event-window) :pointer
